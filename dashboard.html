@@ -177,21 +177,7 @@
           <p><strong>Status:</strong> <span class="status-box">${d.status}</span></p>
           <p><strong>Submitted:</strong> ${new Date(d.timestamp).toLocaleString()}</p>
 
-          <div class="progress-container">
-            <div class="progress-bar-bg">
-              <div id="referralProgress" class="progress-bar">0%</div>
-            </div>
-            <div class="referral-text" id="referralCountText">Loading referrals...</div>
-          </div>
 
-          <div style="margin-top: 25px;">
-            <p><strong>Your Referral Link:</strong></p>
-            <input id="referralLink" type="text" readonly />
-            <button class="copy-btn" onclick="copyReferralLink()">Copy</button>
-          </div>
-
-          <p class="referral-text">Share your referral link with friends and family to gain access to exclusive services, including credit score optimization and eligibility for additional grants and loans!</p>
-        </div>
       `;
       document.getElementById("statusCard").innerHTML = cardHTML;
       document.getElementById("referralLink").value = `${window.location.origin}${window.location.pathname}?ref=${uid}`;
@@ -259,3 +245,4 @@
   </script>
 </body>
 </html>
+
