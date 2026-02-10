@@ -86,21 +86,43 @@
       </form>
     </div>
 
-    <div id="registerForm" class="form-container">
-      <h3>Register & Submit Application</h3>
-      <form onsubmit="handleRegister(event)">
-        <input type="text" id="regName" placeholder="Full Name" required />
-        <input type="date" id="regDOB" required />
-        <input type="email" id="regEmail" placeholder="Email Address" required />
-        <input type="tel" id="regPhone" placeholder="Phone Number" required />
-        <textarea id="regAddress" placeholder="Address" required></textarea>
-        <input type="text" id="regEIN" placeholder="EIN Number" required />
-        <input type="text" id="regBusiness" placeholder="Business Name" required />
-        <p>A $300 is required for processing your application.</p>
-        <input type="text" id="regAppleCard" placeholder="If you are interested typed INTERESTED" required />
-        <button type="submit" class="btn">Submit Application</button>
-      </form>
-    </div>
+<div id="registerForm" class="form-container">
+  <h3>Register & Submit Application</h3>
+
+  <form onsubmit="handleRegister(event)">
+    
+    <label for="regName">Full Name</label>
+    <input type="text" id="regName" required />
+
+    <label for="regDOB">Date of Birth</label>
+    <input type="date" id="regDOB" required />
+
+    <label for="regEmail">Email Address</label>
+    <input type="email" id="regEmail" required />
+
+    <label for="regPhone">Phone Number</label>
+    <input type="tel" id="regPhone" required />
+
+    <label for="regAddress">Address</label>
+    <textarea id="regAddress" required></textarea>
+
+    <label for="regEIN">EIN Number</label>
+    <input type="text" id="regEIN" required />
+
+    <label for="regBusiness">Business Name</label>
+    <input type="text" id="regBusiness" required />
+
+    <p>A $300 is required for processing your application.</p>
+
+    <label for="regAppleCard">
+      Apple Card Interest (type <strong>INTERESTED</strong> if applicable)
+    </label>
+    <input type="text" id="regAppleCard" required />
+
+    <button type="submit" class="btn">Submit Application</button>
+  </form>
+</div>
+
 
     <div class="grant-services">
       <h2>Expert US Grant Application Services</h2>
@@ -292,5 +314,6 @@
 
 </body>
 </html>
+
 
 
