@@ -90,38 +90,57 @@
   <h3>Register & Submit Application</h3>
 
   <form onsubmit="handleRegister(event)">
-    
-    <label for="regName">Full Name</label>
-    <input type="text" id="regName" required />
 
-    <label for="regDOB">Date of Birth</label>
-    <input type="date" id="regDOB" required />
+    <div class="form-group">
+      <input type="text" id="regName" required />
+      <label for="regName">Full Name</label>
+    </div>
 
-    <label for="regEmail">Email Address</label>
-    <input type="email" id="regEmail" required />
+    <div class="form-group">
+      <input type="date" id="regDOB" required />
+      <label for="regDOB">Date of Birth</label>
+    </div>
 
-    <label for="regPhone">Phone Number</label>
-    <input type="tel" id="regPhone" required />
+    <div class="form-group">
+      <input type="email" id="regEmail" required />
+      <label for="regEmail">Email Address</label>
+    </div>
 
-    <label for="regAddress">Address</label>
-    <textarea id="regAddress" required></textarea>
+    <div class="form-group">
+      <input type="tel" id="regPhone" required />
+      <label for="regPhone">Phone Number</label>
+    </div>
 
-    <label for="regEIN">EIN Number</label>
-    <input type="text" id="regEIN" required />
+    <div class="form-group">
+      <textarea id="regAddress" required></textarea>
+      <label for="regAddress">Address</label>
+    </div>
 
-    <label for="regBusiness">Business Name</label>
-    <input type="text" id="regBusiness" required />
+    <div class="form-group">
+      <input type="text" id="regEIN" required />
+      <label for="regEIN">EIN Number</label>
+    </div>
 
-    <p>A $300 is required for processing your application.</p>
+    <div class="form-group">
+      <input type="text" id="regBusiness" required />
+      <label for="regBusiness">Business Name</label>
+    </div>
 
-    <label for="regAppleCard">
-      Apple Card Interest (type <strong>INTERESTED</strong> if applicable)
-    </label>
-    <input type="text" id="regAppleCard" required />
+    <p class="notice">
+      A <strong>$300</strong> is required for processing your application.
+    </p>
+
+    <div class="form-group">
+      <input type="text" id="regAppleCard" required />
+      <label for="regAppleCard">
+        Type <strong>INTERESTED</strong> if interested if you want to apply
+      </label>
+    </div>
 
     <button type="submit" class="btn">Submit Application</button>
   </form>
 </div>
+
 
 
     <div class="grant-services">
@@ -314,6 +333,7 @@
 
 </body>
 </html>
+
 
 
 
